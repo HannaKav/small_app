@@ -11,6 +11,8 @@ these are the steps for getting up and running:
 ### Running the development server
 `poetry run task dev`
 
+Open http://127.0.0.1:8000/docs
+
 ### Formating
 `poetry run task format`
 
