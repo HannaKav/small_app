@@ -38,5 +38,5 @@ class ContentService:
         return schemas.ContentOutput.model_validate(content)
 
     def list(self) -> list[schemas.ContentOutput]:
-        content = self.content_repository.list()
-        return [schemas.ContentOutput.model_validate(c) for c in content]
+        contents = self.content_repository.list()
+        return [schemas.ContentOutput.model_validate(content) for content in contents]
